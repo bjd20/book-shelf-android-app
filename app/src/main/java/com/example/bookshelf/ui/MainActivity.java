@@ -1,6 +1,10 @@
 package com.example.bookshelf.ui;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,5 +26,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            startActivity(new Intent(this, BookListActivity.class));
+            finish();
+        }, 2000); // 2 second delay
     }
 }

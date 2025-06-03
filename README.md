@@ -7,11 +7,11 @@
 - View detailed book information
 - Mark books as favorites
 - Offline persistence with Room Database
-- Clean MVVM architecture
+- MVVM architecture
 
 ## Prerequisites 🛠️
 - Android Studio Flamingo or later
-- Android SDK 33+
+- Android SDK 31+
 - Java 17+
 
 ## Testing the Project 💻
@@ -22,5 +22,11 @@
 
 ## Screenshots 📸
 
-![App Screenshot](screenshots/list_screen.png)   ![App Screenshot](screenshots/detail_screen.png)
+![App Screenshot](screenshots/all_screens.gif)
+
+<p align="center">
+  <img src="screenshots/splash_screen.png" alt="Screenshot" width="300" style="margin-right: 30px;"/>
+  <img src="screenshots/list_screen.png" alt="Screenshot" width="300" style="margin-right: 30px;"/>
+  <img src="screenshots/detail_screen.png" alt="Screenshot" width="300"/>   
+</p>
 
