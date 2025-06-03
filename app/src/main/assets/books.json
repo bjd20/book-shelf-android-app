@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice, it views a world of great beauty and savage inequities through the eyes of a young girl.",
+    "rating": 4.8,
+    "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/51IXWZzlgSL._SX331_BO1,204,203,200_.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81aY1lxk+9L.jpg"
+  },
+  {
+    "id": "2",
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian social science fiction novel about the dangers of totalitarianism, thought surveillance, and government control of reality.",
+    "rating": 4.7,
+    "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/71kxa1-0mfL._AC_UL600_SR600,600_.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81WStQ4WCJL.jpg"
+  },
+  {
+    "id": "3",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A portrait of the Jazz Age in all of its decadence and excess, Gatsby captured the spirit of the author's generation and earned itself a permanent place in American mythology.",
+    "rating": 4.5,
+    "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/71FTb9X6wsL._AC_UL600_SR600,600_.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81QuEGw8VPL.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "description": "A romantic novel that charts the emotional development of Elizabeth Bennet, who learns the error of making hasty judgments and comes to appreciate the difference between the superficial and the essential.",
+    "rating": 4.6,
+    "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/71Q1tPupKjL._AC_UL600_SR600,600_.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81S0mVe0uRL.jpg"
+  },
+  {
+    "id": "5",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "A fantasy novel about the quest of home-loving hobbit Bilbo Baggins to win a share of the treasure guarded by Smaug the dragon.",
+    "rating": 4.9,
+    "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/710+HcoP38L._AC_UL600_SR600,600_.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/710+HcoP38L.jpg"
+  },
+  {
+    "id": "6",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "description": "A novel about alienation and the phoniness of adult life, told through the eyes of teenage rebel Holden Caulfield.",
+    "rating": 4.4,
+    "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/61fgOuZfBmL._AC_UL600_SR600,600_.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/91HPG31dTwL.jpg"
+  },
+  {
+    "id": "7",
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "description": "An epic high-fantasy novel about the struggle to destroy the One Ring and defeat the Dark Lord Sauron.",
+    "rating": 4.9,
+    "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/71jLBXtWJWL._AC_UL600_SR600,600_.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71jLBXtWJWL.jpg"
+  }
+]
