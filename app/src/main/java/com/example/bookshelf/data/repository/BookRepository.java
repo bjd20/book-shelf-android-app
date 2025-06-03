@@ -7,6 +7,7 @@ import androidx.lifecycle.LiveData;
 
 import com.example.bookshelf.BookShelf;
 import com.example.bookshelf.data.BookDao;
+import com.example.bookshelf.data.BookDatabase;
 import com.example.bookshelf.data.model.Book;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -25,9 +26,9 @@ public class BookRepository {
     private final String TAG = "BookRepository";
 
 
-    public BookRepository(Context context) {
-        this.context = context;
-        this.bookDao = BookShelf.getDatabase().bookDao();
+    public BookRepository(Context context, BookDatabase bookDatabase) {
+        this.context = context.getApplicationContext();
+        this.bookDao = bookDatabase.bookDao();
         loadInitialData();
     }
 
@@ -69,6 +70,10 @@ public class BookRepository {
 
     public LiveData<List<Book>> getAllBooks() {
         return bookDao.getAllBooks();
+    }
+
+    public LiveData<Book> getBookById(String bookId) {
+        return bookDao.getBookById(bookId);
     }
 
     public void toggleFavorite(String bookId, boolean isFavorite) {

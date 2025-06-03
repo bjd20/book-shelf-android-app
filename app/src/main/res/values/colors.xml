@@ -3,7 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#7ED655</color>
-    <color name="yellow">#E6DB6F</color>
+    <color name="yellow">#FDE723</color>
+    <color name="orange">#F8600E</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_1000">#005D5C</color>
     <color name="secondary_text">#096506</color>
 
 

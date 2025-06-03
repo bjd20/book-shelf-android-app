@@ -12,14 +12,17 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/green"
+        android:textColor="@color/teal_1000"
         android:textSize="30sp"
-        android:text="Book List" />
+        android:text="@string/library" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_red_yellow"
+        android:paddingTop="5dp"
+        tools:listitem="@layout/item_book"/>
 
         <ProgressBar
             android:id="@+id/progressBar"

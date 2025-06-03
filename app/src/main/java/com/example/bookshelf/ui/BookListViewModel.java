@@ -8,6 +8,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
+import com.example.bookshelf.BookShelf;
 import com.example.bookshelf.data.model.Book;
 import com.example.bookshelf.data.repository.BookRepository;
 
@@ -24,7 +25,8 @@ public class BookListViewModel extends AndroidViewModel {
     public BookListViewModel(@NonNull Application application) {
         super(application);
         Log.d(TAG, "Initiated");
-        this.repository = new BookRepository(application.getApplicationContext());
+//        this.repository = new BookRepository(application.getApplicationContext());
+        this.repository = ((BookShelf) getApplication()).getRepository();
         loadBooks();
     }
 

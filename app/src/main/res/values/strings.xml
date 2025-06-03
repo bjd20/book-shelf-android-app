@@ -2,4 +2,5 @@
     <string name="app_name">BookShelf</string>
     <string name="book_cover">CoverImage</string>
     <string name="toggle_favorite">Toggle Fav</string>
+    <string name="library">Library</string>
 </resources>

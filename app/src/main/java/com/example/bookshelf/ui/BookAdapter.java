@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -61,20 +62,19 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.MyViewHolder> 
 
         // Load image
         Picasso.get()
-                .load(book.getThumbnailUrl())
+                .load(book.getImageUrl())
                 .placeholder(R.drawable.baseline_menu_book_24)
-                .error(R.drawable.baseline_info)
                 .resize(120, 180)
                 .into(holder.thumbnail);
 
         // Set favorite icon
         int favoriteIcon = book.isFavorite()
-                ? R.drawable.heart
+                ? R.drawable.heart_fill
                 : R.drawable.heart_out;
         holder.favoriteButton.setImageResource(favoriteIcon);
 
         // Click listeners
-        holder.itemView.setOnClickListener(v -> bookClickListener.onBookClick(book));
+        holder.itemLayout.setOnClickListener(v -> bookClickListener.onBookClick(book));
         holder.favoriteButton.setOnClickListener(v -> favoriteClickListener.onFavoriteClick(book));
     }
 
@@ -89,12 +89,16 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.MyViewHolder> 
         TextView title;
         TextView author;
         ImageView favoriteButton;
+
+        LinearLayout itemLayout;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             thumbnail = itemView.findViewById(R.id.thumbnail);
             title = itemView.findViewById(R.id.title);
             author = itemView.findViewById(R.id.author);
             favoriteButton = itemView.findViewById(R.id.favoriteButton);
+            itemLayout = itemView.findViewById(R.id.layout_item);
         }
     }
 }

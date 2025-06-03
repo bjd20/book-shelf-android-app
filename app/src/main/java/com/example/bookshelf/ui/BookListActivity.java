@@ -2,6 +2,7 @@ package com.example.bookshelf.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -59,6 +60,7 @@ public class BookListActivity extends AppCompatActivity {
     }
 
     private void onBookClick(Book book) {
+        Log.d(TAG, "Book Clicked");
         Intent intent = new Intent(this, BookDetailActivity.class);
         intent.putExtra("BOOK_ID", book.getId());
         startActivity(intent);
